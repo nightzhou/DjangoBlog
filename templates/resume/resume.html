@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+{% load static %}
+{% load compress %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+{#    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">#}
+    <title>个人简历</title>
+    {% compress css %}
+        <link rel="stylesheet" href="{% static 'resume/css/sim.css' %}">
+    {% endcompress %}
+
+    {% compress js %}
+        <script src="{% static 'resume/js/xk.js' %}"></script>
+        <script src="{% static 'resume/js/sim.js' %}"></script>
+    {% endcompress %}
+</head>
+<body>
+<!--页头导航开始-->
+<div id="nav">
+    <ul>
+        <li>
+            <a href="#xk">自我描述</a>
+            <span>>></span>
+        </li>
+        <li>
+            <a href="#jy">项目经验</a>
+            <span>>></span>
+        </li>
+        <li><a href="#jl">工作经历</a></li>
+    </ul>
+
+</div>
+<!--页头导航结束-->
+
+<!--工作经验开始-->
+<div id="per">
+    <div class="photo">
+        <a name="xk"></a>
+        <img src="{% static 'resume/picture/img_1835.jpg' %}">
+    </div>
+    <div class="name">周 鹏 飞</div>
+    <div class="tel">
+        <ul>
+            <li>最高学历：<span>本科</span></li>
+            <li>期望职位：<span>Python开发工程师</span></li>
+            <li>工作经验：<span>1年+</span></li>
+            <li>工作性质：<span>全职</span></li>
+            <li>出生年月：<span>1994年 男</span></li>
+            <li>期望城市：<span>上海</span></li>
+            <li>所在城市：<span>上海</span></li>
+            <li>期望月薪：<span>6K~8K</span></li>
+            <li>手机号码：<span>13298376749</span></li>
+            <li>补充说明：<span>暂无</span></li>
+            <li>联系邮箱：<span>1340815253@qq.com</span></li>
+        </ul>
+    </div>
+</div>
+<!--工作经验结束-->
+
+
+<!--项目经验开始-->
+<div id="exp">
+    <div class="title">
+        <a name="jy"></a>
+        <span>项目经验</span>
+    </div>
+    <ul class="ect">
+        <li>
+            <div class="xz">
+                <div class="cir2"></div>
+                <div class="img">
+                    <img src="{% static 'resume/picture/xm_1.jpg' %}"/>
+                </div>
+                <div class="show"></div>
+            </div>
+            <div class="txt">
+                <p class="txt1">爬虫</p>
+                <p class="txt2">2017/10-2018/2</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="xz">
+                <div class="cir2"></div>
+                <div class="img">
+                    <img src="{% static 'resume/picture/xm_2.jpg' %}"/>
+                </div>
+                <div class="show"></div>
+            </div>
+            <div class="txt">
+                <p class="txt1">微电影网站</p>
+                <p class="txt2">2018/2-2018/4</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="xz">
+                <div class="cir2"></div>
+                <div class="img">
+                    <img src="{% static 'resume/picture/xm_3.jpg' %}"/>
+                </div>
+                <div class="show"></div>
+            </div>
+            <div class="txt">
+                <p class="txt1">多肉植物杂交系统</p>
+                <p class="txt2">2018/4-2018/6</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="xz">
+                <div class="cir2"></div>
+                <div class="img">
+                    <img src="{% static 'resume/picture/xm_4.jpg' %}"/>
+                </div>
+                <div class="show"></div>
+            </div>
+            <div class="txt">
+                <p class="txt1">人工智能量化交易系统</p>
+                <p class="txt2">2018/8-2019/2</p>
+            </div>
+        </li>
+
+
+    </ul>
+    <div style="clear:both;"></div>
+</div>
+<!--项目经验结束-->
+
+<!--遮罩层开始-->
+<div id="mask"></div>
+<div id="case">
+    <ul>
+        <li>
+            <div class="content">
+                <div class="caseImg">
+                    <img src="{% static 'resume/picture/1.jpg' %}"/>
+                    <img src="{% static 'resume/picture/2.jpg' %}"/>
+                    <img src="{% static 'resume/picture/3.jpg' %}"/>
+                </div>
+                <div class="caseTxt">
+                    <p>
+                        项目名称：
+                        <span>爬虫</span>
+                    </p>
+                    <p>
+                        项目时间：
+                        <span>2017.10-2018.02</span>
+                    </p>
+                    <p>
+                        项目链接：
+                        <span>
+								<a href="#">
+									无
+									<span class="link"></span>
+								</a>
+							</span>
+                    </p>
+                    <p>
+                        项目描述：
+                        <span class="bbb">根据需要编写各类爬虫程序来爬去数据，并对数据进行清洗工作，保存入库。例：智联招聘、网易新闻及其他图片或者评论等。有时还使用八爪鱼进行数据采集。主要负责分析网站结构，设计出爬虫代码，能独立爬去制定网站数据。</span>
+                    </p>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div class="close"></div>
+
+        </li>
+        <li>
+            <div class="content">
+                <div class="caseImg">
+                    <img src="{% static 'resume/picture/1.jpg' %}"/>
+                    <img src="{% static 'resume/picture/2.jpg' %}"/>
+                    <img src="{% static 'resume/picture/3.jpg' %}"/>
+                </div>
+                <div class="caseTxt">
+                    <p>
+                        项目名称：
+                        <span>微电影网站</span>
+                    </p>
+                    <p>
+                        项目时间：
+                        <span>2018/2-2018/4</span>
+                    </p>
+                    <p>
+                        项目链接：
+                        <span>
+								<a href="#">
+									无
+									<span class="link"></span>
+								</a>
+							</span>
+                    </p>
+                    <p>
+                        项目描述：
+                        <span class="bbb">项目基于Flask框架，该项目前端功能有：前台首页、电影筛选、电影列表、播放详情、评论、收藏、搜索、注册、登录、会员中心；后台功能有：标签、电影管理、预告、会员、评论、收藏、日志、权限管理、角色、管理员。主要工作有：数据模型的创建，表单的设计创建，控制视图的代码编写，项目配置、装饰器实现用户权限的控制等后端任务。</span>
+                    </p>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div class="close"></div>
+
+        </li>
+        <li>
+            <div class="content">
+                <div class="caseImg">
+                    <img src="{% static 'resume/picture/1.jpg' %}"/>
+                    <img src="{% static 'resume/picture/2.jpg' %}"/>
+                    <img src="{% static 'resume/picture/3.jpg' %}"/>
+                </div>
+                <div class="caseTxt">
+                    <p>
+                        项目名称：
+                        <span>多肉植物杂交系统</span>
+                    </p>
+                    <p>
+                        项目时间：
+                        <span>2018/4-2018/6</span>
+                    </p>
+                    <p>
+                        项目链接：
+                        <span>
+								<a href="#">
+									无
+									<span class="link"></span>
+								</a>
+							</span>
+                    </p>
+                    <p>
+                        项目描述：
+                        <span class="bbb">项目基于Django框架，主要分为用户模块、多肉数据模块、杂交预测模块三部分。
+实现的功能有多肉植物信息列表与详情展示，二级联动多肉植物分类、多肉植物的模糊查询、已有杂交信息记录的展示、文章的编辑与阅读、全站数据的搜索，预测亲本的查询与选择、杂交性状的预测及展示。</span>
+                    </p>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div class="close"></div>
+
+        </li>
+        <li>
+            <div class="content">
+                <div class="caseImg">
+                    <img src="{% static 'resume/picture/1.jpg' %}"/>
+                    <img src="{% static 'resume/picture/2.jpg' %}"/>
+                    <img src="{% static 'resume/picture/3.jpg' %}"/>
+                </div>
+                <div class="caseTxt">
+                    <p>
+                        项目名称：
+                        <span>量化交易系统</span>
+                    </p>
+                    <p>
+                        项目时间：
+                        <span>2018/8-2019/2</span>
+                    </p>
+                    <p>
+                        项目链接：
+                        <span>
+								<a href="#">
+									无
+									<span class="link"></span>
+								</a>
+							</span>
+                    </p>
+                    <p>
+                        项目描述：
+                        <span class="bbb">该项目是用python语言开发的量化交易系统，系统主要功能有策略编写，策略回测，收益曲线计算展示，策略性能报告（涉及净利润、盈利比率、交易手数等指标太多不一一列举了）。主要工作职责是量化数据库的创建与维护，保持量化数据实时存储。编写量化系统与数据库的连接模块。量化指标封装，性能指标计算等。</span>
+                    </p>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
+            <div class="close"></div>
+
+        </li>
+
+    </ul>
+</div>
+
+<!--遮罩层结束-->
+
+<!--页底工作经历开始-->
+<div id="footer">
+    <a name="jl"></a>
+    <div class="title">工作经历</div>
+    <div class="box">
+        <div class="text">
+            <i></i>
+            <div class="title2">
+                <div class="img">
+                    <img src="{% static 'resume/picture/gz_1.png' %}">
+                </div>
+                <div class="name">
+                    <p>河南智游集团</P>
+                    <p class="time">2017/10-2018/2</P>
+                </div>
+            </div>
+            <div class="bg3">
+                <div class="ms">
+                    <p class="ms1">工作描述：</p>
+                    <p class="ms2">
+                        分析网站结构，用正则，xpath，scrapy等编写python爬虫程序来爬取所需数据，并对数据进行清洗，最后保存到数据库或生成文档，爬取过的信息有：招聘信息、新闻、图片、评论等。
+                        web前端用jquery,bootstrap等制作简单动画效果，小游戏等。</p>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <i></i>
+            <div class="title2">
+                <div class="img">
+                    <img src="{% static 'resume/picture/gz_2.jpg' %}">
+                </div>
+                <div class="name">
+                    <p>上海同梁网络科技有限公司</P>
+                    <p class="time">2018/8-2019/2</P>
+                </div>
+            </div>
+            <div class="bg3">
+                <div class="ms">
+                    <p class="ms1">工作描述：</p>
+                    <p class="ms2">主要负责量化交易系统的开发，交易策略的编写及测试，量化数据的抓取及处理，协助其他部门完成相关工作。
+                        在公司期间为公司创建了自己的量化数据库，获取近千万条量化数据；完成量化交易系统的数据库与系统的链接,数据管理等；为团队完成测试了不少好的量化模型；按照老板需求用Django完成均线系统，通过均线计算涨跌概率。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--页底工作经历结束-->
+</body>
